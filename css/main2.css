@@ -1,0 +1,259 @@
+p {
+    color: whitesmoke;
+}
+
+body {
+    background-color: #162140;
+}
+
+navbar-nav a {
+    padding: 0 8px 10px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 13px;
+    outline: none;
+}
+
+.navbar-nav>li {
+    margin-left: 10px;
+}
+
+.navbar-nav>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #40EFFC;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-nav a:hover:before,
+.navbar-nav li:hover>a:before,
+.navbar-nav .menu-active>a:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.navbar-nav ul {
+    margin: 4px 0 0 0;
+    border: 1px solid #e7e7e7;
+}
+
+.navbar-nav ul li {
+    background: #fff;
+}
+
+.navbar-nav ul li:first-child {
+    border-top: 0;
+}
+
+.navbar-nav ul li a {
+    padding: 10px;
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    font-size: 13px;
+    text-transform: none;
+}
+
+.navbar-nav ul li a:hover {
+    background: #40EFFC;
+    color: #fff;
+}
+
+.navbar-nav ul ul {
+    margin: 0;
+}
+
+
+/* Mobile Nav Toggle */
+
+#mobile-nav-toggle {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    margin: 20px 20px 0 0;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    display: none;
+    transition: all 0.4s;
+    outline: none;
+    cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+    color: #40EFFC;
+}
+
+@media (max-width: 768px) {
+    #mobile-nav-toggle {
+        display: inline;
+    }
+}
+
+
+/* Mobile Nav Styling */
+
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    padding-top: 18px;
+    bottom: 0;
+    z-index: 998;
+    background: rgba(52, 59, 64, 0.9);
+    left: -260px;
+    width: 260px;
+    overflow-y: auto;
+    transition: 0.4s;
+}
+
+#mobile-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#mobile-nav ul li {
+    position: relative;
+}
+
+#mobile-nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 10px 22px 10px 15px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    outline: none;
+}
+
+#mobile-nav ul li a:hover {
+    color: #fff;
+}
+
+#mobile-nav ul li li {
+    padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+    color: #40EFFC;
+}
+
+#mobile-nav ul .menu-item-active {
+    color: #40EFFC;
+}
+
+#mobile-body-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(52, 59, 64, 0.9);
+    display: none;
+}
+
+
+/* Mobile Nav body classes */
+
+body.mobile-nav-active {
+    overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+    left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+    color: #fff;
+}
+
+.navbar-nav,
+.navbar-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-nav ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+
+.navbar-nav li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.navbar-nav>li {
+    float: left;
+}
+
+.navbar-nav li:hover>ul,
+.navbar-nav li.sfHover>ul {
+    display: block;
+}
+
+.navbar-nav ul ul {
+    top: 0;
+    left: 100%;
+}
+
+.navbar-nav ul li {
+    min-width: 180px;
+}
+
+.blinking {
+    animation: blinkingText 1s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        color: whitesmoke;
+    }
+    49% {
+        color: transparent;
+    }
+    50% {
+        color: transparent;
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        color: whitesmoke;
+    }
+}
+
+.navbar-nav>li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
