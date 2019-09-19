@@ -198,7 +198,7 @@ header .btn-get-started:hover {
 
 @media (pointer: coarse) and (hover: none) {
     header {
-        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') whitesmoke no-repeat center center scroll;
+        background: #121212 no-repeat;
     }
     header video {
         display: none;
