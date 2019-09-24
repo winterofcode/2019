@@ -12,7 +12,7 @@
     margin: 0 0 20px 0;
 }
 
-.timeline ul li h3 {
+.timeline ul li h4 {
     color: white;
 }
 
@@ -229,7 +229,7 @@
         width: 3.5px;
         height: 90%;
     }
-    .timeline ul li h3 {
+    .timeline ul li h4 {
         font-size: 25px;
         padding-bottom: 10px;
     }
@@ -286,7 +286,7 @@
         width: 3.5px;
         height: 90%;
     }
-    .timeline ul li h3 {
+    .timeline ul li h4 {
         font-size: 25px;
         padding-bottom: 10px;
     }
@@ -343,7 +343,7 @@
         width: 3.5px;
         height: 90%;
     }
-    .timeline ul li h3 {
+    .timeline ul li h4 {
         font-size: 25px;
         padding-bottom: 10px;
     }
