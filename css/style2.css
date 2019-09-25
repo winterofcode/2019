@@ -8286,7 +8286,8 @@ h6 {
     }
 
     header{
-        height: 125vh !important;
+        height: 135vh !important;
+        background-color: black !important;
     }
 }
 

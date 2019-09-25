@@ -1,6 +1,6 @@
 .timeline {
     position: relative;
-    margin: 50px auto;
+    margin: -10px auto;
     padding: 60px 0;
     width: 1000px;
 }
@@ -25,8 +25,9 @@
     position: absolute;
     left: 50%;
     width: 5px;
-    height: 85%;
+    height: 83%;
     background: #c5c5c5;
+    top: 120px;
 }
 
 .timeline ul {
@@ -215,19 +216,16 @@
     background: #ffffff;
 }
 
-
-/*      RESPONSIVE DESIGN FOR DEVICE IN 600PX  */
-
-@media (max-width:600px) {
-    .timeline {
-        margin: 50px auto;
+@media (max-width:320px){
+     .timeline {
+        margin: -50px auto!important;
         padding: 60px 0;
         width: 100%;
     }
     .timeline ul:before {
-        left: 10px;
+        left: 15px!important;
         width: 3.5px;
-        height: 90%;
+        height: 84% !important;
     }
     .timeline ul li h4 {
         font-size: 25px;
@@ -253,7 +251,7 @@
         position: absolute;
         width: 16px;
         height: 16px;
-        left: 3px;
+        left: 9px!important;
         top: 53px;
         border-radius: 50%;
     }
@@ -262,7 +260,7 @@
         position: absolute;
         width: 16px;
         height: 16px;
-        left: 3px;
+        left: 9px!important;
         top: 55px;
         border-radius: 50%;
     }
@@ -270,21 +268,145 @@
         width: 100%;
         margin-left: -10px;
     }
+    
+    .timeline h4{
+        font-size: 16px !important;
+    }
+}
+
+
+@media (min-width:321px) and (max-width:400px){
+   .timeline {
+        margin: -50px auto !important;
+        padding: 60px 0;
+        width: 100%;
+    }
+    .timeline ul:before {
+        left: 15px!important;
+        width: 3.5px;
+        height: 83.5% !important;
+    }
+    .timeline ul li h4 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .timeline ul li {
+        font-size: 14px;
+        width: 100%;
+        padding: 50px 0px 0px 50px;
+    }
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        text-align: left;
+        clear: both;
+    }
+    .timeline ul li:nth-child(even) {
+        float: left;
+        text-align: left;
+        clear: both
+    }
+    .timeline ul li:nth-child(odd)::before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 9px!important;
+        top: 53px;
+        border-radius: 50%;
+    }
+    .timeline ul li:nth-child(even)::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 9px!important;
+        top: 55px;
+        border-radius: 50%;
+    }
+    .timeline ul li .content {
+        width: 100%;
+        margin-left: -10px;
+    }
+    
+    .timeline h4{
+        font-size: 20px !important;
+    }
+}
+
+
+/*      RESPONSIVE DESIGN FOR DEVICE IN 600PX  */
+
+@media (min-width:401px) and (max-width:600px) {
+    .timeline {
+        margin: -50px auto !important;
+        padding: 60px 0;
+        width: 100%;
+    }
+    .timeline ul:before {
+        left: 15px!important;
+        width: 3.5px;
+        height: 83% !important;
+    }
+    .timeline ul li h4 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .timeline ul li {
+        font-size: 14px;
+        width: 100%;
+        padding: 50px 0px 0px 50px;
+    }
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        text-align: left;
+        clear: both;
+    }
+    .timeline ul li:nth-child(even) {
+        float: left;
+        text-align: left;
+        clear: both
+    }
+    .timeline ul li:nth-child(odd)::before {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 9px!important;
+        top: 53px;
+        border-radius: 50%;
+    }
+    .timeline ul li:nth-child(even)::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 9px!important;
+        top: 55px;
+        border-radius: 50%;
+    }
+    .timeline ul li .content {
+        width: 100%;
+        margin-left: -10px;
+    }
+    
+    .timeline h4{
+        font-size: 20px !important;
+    }
 }
 
 
 /*      RESPONSIVE DESIGN FOR DEVICE IN 768PX  */
 
-@media (max-width:768px) {
+@media (min-width:768px) and (max-width:990px) {
     .timeline {
-        margin: 50px auto;
+        margin: -10px auto !important;
         padding: 60px 0;
         width: 100%;
     }
     .timeline ul:before {
         left: 10px;
         width: 3.5px;
-        height: 90%;
+        height: 84.5%!important;
     }
     .timeline ul li h4 {
         font-size: 25px;
@@ -331,57 +453,98 @@
 
 
 /*      RESPONSIVE DESIGN FOR DEVICE IN 991PX  */
-
-@media (max-width:991px) {
-    .timeline {
-        margin: 50px auto;
-        padding: 60px 0;
-        width: 100%;
-    }
-    .timeline ul:before {
-        left: 10px;
+@media (max-width:991px){
+    .timeline{
+    margin: 50px auto;
+    padding: 60px 0;
+    width: 100%;
+}
+    
+    .timeline ul:before{
+        left:10px;
         width: 3.5px;
         height: 90%;
-    }
-    .timeline ul li h4 {
+}
+    
+    
+    
+    .timeline ul li h3{
         font-size: 25px;
         padding-bottom: 10px;
     }
-    .timeline ul li {
-        font-size: 14px;
-        width: 100%;
-        padding: 50px 0px 0px 50px;
+    
+    .timeline ul li{
+    font-size: 14px;
+    width: 100%;
+    padding: 50px 0px 0px 50px;
+}
+    
+    .timeline ul li:nth-child(odd){
+    float: left;
+    text-align:left;
+    clear: both;
+    
+}
+
+.timeline ul li:nth-child(even){
+    float: left;
+    text-align: left;
+    clear: both
+}
+    
+    .timeline ul li:nth-child(odd)::before{
+     content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 3px;
+    top: 53px;
+    border-radius: 50%;
+}
+
+.timeline ul li:nth-child(even)::after{
+     content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 3px;
+    top: 55px;
+    border-radius: 50%;
+}
+    
+.timeline ul li .content{
+    width: 100%;
+    margin-left: -10px;
+    
     }
-    .timeline ul li:nth-child(odd) {
-        float: left;
-        text-align: left;
-        clear: both;
+    
+.projectSec .devfest{
+        padding-top: 30px;
     }
-    .timeline ul li:nth-child(even) {
-        float: left;
-        text-align: left;
-        clear: both
-    }
-    .timeline ul li:nth-child(odd)::before {
-        content: '';
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        left: 3px;
-        top: 53px;
-        border-radius: 50%;
-    }
-    .timeline ul li:nth-child(even)::after {
-        content: '';
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        left: 3px;
-        top: 55px;
-        border-radius: 50%;
-    }
-    .timeline ul li .content {
-        width: 100%;
-        margin-left: -10px;
-    }
+    
+    
+}
+
+@media (min-width:991px) and (max-width:1024px){
+    .timeline ul li:nth-child(even)::after{
+     content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 470px!important;
+    top: 55px;
+    border-radius: 50%;
+}
+}
+
+@media (min-width:1025px) and (max-width:1200px){
+    .timeline ul li:nth-child(even)::after{
+     content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 471px!important;
+    top: 55px;
+    border-radius: 50%;
+}
 }
