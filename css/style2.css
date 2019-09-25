@@ -8284,6 +8284,10 @@ h6 {
     #topcover {
         margin-top: 20vh ;
     }
+
+    header{
+        height: 125vh !important;
+    }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
